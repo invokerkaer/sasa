@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/shasha.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <script src="../js/jquery-3.4.1.js"></script>
+    <script src="../js/shasha.js"></script>
+    <script src="../js/list.js"></script>
+</head>
+
+<body>
+    <!-- <include src="shashahome/topbar.html"></include> -->
+    <div class="topbar">
+        <div class="page-rs">
+            <div class="login-bar">
+                <span id="loginBar_538" style="display: block">
+                    <span>欢迎光临莎莎网!</span>
+                    <a href="login.html" style="margin-left: 10px">登录</a>
+                    <span class="dividing">或</span>
+                    <a href="register.html">免费注册</a>
+                </span>
+                <span id="memberBar_538" style="display: none">
+                    <span>
+                        您好! <span id="uname_538"></span>
+                    </span>
+                    <span class="syew" style="display: none"><i class="iconfont"></i>VIP </span>
+                    <span class="point"><b>0</b> 积分</span>
+                    <a href="" id="quit">退出</a>
+                </span>
+            </div>
+            <div class="member-link">
+                <ul>
+                    <li class="noline">
+                        <div class="member-linktext" id="memH4">
+                            <a href="">
+                                <i class="iconfont icon-wode"></i>我的账户
+                                <img src="../images/向下.png" alt="">
+                            </a>
+                        </div>
+                        <dl id="memDl">
+                            <dd><a href="" rel="nofollow">我的订单</a></dd>
+                            <dd><a href="" rel="nofollow">我的积分</a></dd>
+                            <dd><a href="" rel="nofollow">我的优惠券</a></dd>
+                            <dd><a href="" rel="nofollow">我的收藏</a></dd>
+                            <dd><a href="" rel="nofollow">我的评价</a></dd>
+                        </dl>
+                    </li>
+                    <li class="noline">
+                        <div id="minicart" class="member-linktext">
+                            <div class="js_minnicart-title tc">
+                                <a href="" rel="nofollow">
+                                    <i class="iconfont icon-appwaimai"></i>
+                                    我的购物车
+                                </a>
+                            </div>
+                            <div class="miniCarDetail minicart-cont-rs">
+                                <div class="empty"></div>
+                                <!-- <img class="loading" src="../images/loading.gif" alt="" height="32" width="32"> -->
+                            </div>
+                        </div>
+                    </li>
+                    <li class="noline">
+                        <div class="member-linktext">
+                            <a href="" rel="nofollow">
+                                <i class="iconfont icon-aixinjuanzeng"></i>
+                                我的收藏
+                            </a>
+                        </div>
+                    </li>
+                    <li class="noline">
+                        <div class="member-linktext" id="index_mymessage">
+                            <a href="" rel="nofollow">我的站内信</a>
+                        </div>
+                    </li>
+                    <li class="noline">
+                        <div class="member-linktext">
+                            <a href="" rel="nofollow">积分中心</a>
+                        </div>
+                    </li>
+                    <li class="noline">
+                        <div class="member-linktext">
+                            <a href="" rel="nofollow">Global site</a>
+                        </div>
+                    </li>
+                    <li class="noline">
+                        <div class="member_attention_2" id="usH4">
+                            <a href="#" rel="nofollow">关注我们</a>
+                            <a href="" rel="nofollow" class="member_attention_2_item">
+                                <img src="../images/member_attention_1.png" alt="" height="15" width="17">
+                            </a>
+                            <a href="" rel="nofollow" class="member_attention_2_item">
+                                <img src="../images/member_attention_2.png" alt="" height="14" width="17">
+                            </a>
+                            <div class="member_attention_2_qr" id="member_attention_2_qr_1">
+                                <img src="../images/member_attention_1_qr.png" alt="" width="100px" height="100px">
+                            </div>
+                            <div class="member_attention_2_qr" id="member_attention_2_qr_2">
+                                <img src="../images/member_attention_2_qr.png" alt="" width="100px" height="100px">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="page-rs">
+            <div class="sotelogo-rs">
+                <div style="float: left;">
+                    <a href="">
+                        <img src="../images/logo.png" alt="欢迎光临莎莎网" width='170' height='42'>
+                    </a>
+                </div>
+
+                <div class="site_log_extend" style="float: left;"></div>
+                <div style="clear: both;"></div>
+            </div>
+            <div class="search clearfix">
+                <form action="" method="post" class="SearchBar searchBar" id="searchbar" async="false">
+                    <div class="search-input">
+                        <input type="text" name="search_keywords" placeholder="防晒"
+                            autocompleter="associate_autocomplete_goods:name,goods_id" ac_options="{}" class="key"
+                            value="" autocomplete="off">
+                    </div>
+                    <button type="submit" class="btn btn-search submit-btn">搜索</button>
+                </form>
+                <div class="hot-keywords rs">
+                    <!-- <a href="">面膜</a>  //假数据 需要后台获取 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav-category">
+        <div class="page-rs">
+            <div class="all-category">
+                <div id="cat_550">
+                    <div class="sasa_category_head">
+                        <div class="sasa_category_head_icon">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>全部分类
+                    </div>
+                </div>
+                <div class="sasa_category" style="visibility: hidden;">
+                    <ul class="sasa_category_ul">
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="tj-category-rs">
+            <ul id="sub_nav_551">
+                <li class="sub_nav_item">
+                    <a href="" style="cursor:pointer;font-size: 16px;font-weight: normal;display: block;">香港特快直送</a>
+                </li>
+                <li class="sub_nav_sep"><a href="">/</a></li>
+                <li class="sub_nav_item">
+                    <a href="" style="cursor:pointer;font-size: 16px;font-weight: normal;display: block;">闪电保税仓</a>
+                </li>
+                <li class="sub_nav_sep"><a href="">/</a></li>
+                <li class="sub_nav_item">
+                    <a href="" style="cursor:pointer;font-size: 16px;font-weight: normal;display: block;">限时特卖<i
+                            class="sub_nav_hoticon"></i></a>
+                </li>
+                <li class="sub_nav_sep"><a href="">/</a></li>
+                <li class="sub_nav_item">
+                    <a href="" style="cursor:pointer;font-size: 16px;font-weight: normal;display: block;">贵宾专享</a>
+                </li>
+                <li class="sub_nav_sep"><a href="">/</a></li>
+                <li class="sub_nav_item">
+                    <a href="" style="cursor:pointer;font-size: 16px;font-weight: normal;display: block;">莎莎Outlet</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page">
+        <div class="bread-crumbs"></div>
+        <div class="lsidebar">
+            <div class="refilter">
+                <div class="cpfl-bt">产品分类</div>
+                <ul class="gray-box l_aone m">
+                    <li class="ahover">
+                        <span>
+                            <a href="">面部护肤</a>
+                        </span>
+                        <ul class="l_btwo hide">
+                            <li><a href="">
+                                    <span></span>
+                                    洁面
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    洁面
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    洁面
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    洁面
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    洁面
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    洁面
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="ahover">
+                        <span>
+                            <a href="">彩妆</a>
+                        </span>
+                        <ul class="l_btwo hide">
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="ahover">
+                        <span>
+                            <a href="">个人护理</a>
+                        </span>
+                        <ul class="l_btwo hide">
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="ahover">
+                        <span>
+                            <a href="">纤体美胸</a>
+                        </span>
+                        <ul class="l_btwo hide">
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="ahover">
+                        <span>
+                            <a href="">健康美肌</a>
+                        </span>
+                        <ul class="l_btwo hide">
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                        </ul>
+                    </li>
+                    <li class="ahover">
+                        <span>
+                            <a href="">香水</a>
+                        </span>
+                        <ul class="l_btwo hide">
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                            <li><a href="">
+                                    <span></span>
+                                    隔离霜
+                                </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="gray-box sales-rank m" id="hst" style="display:none;">
+                <div class="gray-title">浏览记录</div>
+                <div class="gray-content">
+                    <div class="product-list" id="box_430"></div>
+                </div>
+            </div>
+        </div>
+        <div class="right-main">
+            <div id="main" class="clearfix filter-mod">
+                <div id="filter_container" class="filter-container">
+                    <div id="gallery_filter" class="gallery-filter">
+                        <div id="filter_selected" class="filter-selected clearfix">
+                            <div class="filter-clean fr">
+                                <a href="javascript:location.reload();Memory.clean('gallery.filter');">重置筛选项</a>
+                            </div>
+                            <dl class="filter-selected-list clearfix">
+                                <dt class="filter-selected-title">已选</dt>
+                                <dd class="filter-selected-values"></dd>
+                            </dl>
+                        </div>
+                        <div id="filter_lists" class="filter-lists-container">
+                            <dl class="filter-entries clearfix">
+                                <dt class="filter-entries-label">分类</dt>
+                                <dd class="filter-entries-values">
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item">
+                                            <a href="" class="handle action-cat-filter">泡沫洁面乳</a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item">
+                                            <a href="" class="handle action-cat-filter">洁面摩丝</a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item">
+                                            <a href="" class="handle action-cat-filter">洁面啫喱</a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item">
+                                            <a href="" class="handle action-cat-filter">洁面奶</a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item">
+                                            <a href="" class="handle action-cat-filter">洁面乳</a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item">
+                                            <a href="" class="handle action-cat-filter">洁面粉</a>
+                                        </span>
+                                    </span>
+                                </dd>
+                            </dl>
+                            <dl class="filter-entries clearfix" data-label="brand_id">
+                                <dt class="filter-entries-label">品牌</dt>
+                                <dd class="filter-entries-multi">
+                                    <a href="">
+                                        <span class="text">多选+</span>
+                                    </a>
+                                </dd>
+                                <dd class="filter-entries-more action-unfold-entries">
+                                    <a href="">
+                                        <span class="text" data-toggle="收起">更多</span>
+                                        <i class="iconfont" data-toggle=""></i>
+                                    </a>
+                                </dd>
+                                <dd class="filter-entries-values">
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item" data-fid="brand_id-20855">
+                                            <a href="" class="boxnone action-check-filter"></a>
+                                            <a href="" class="handle action-select-filter">Beauty Buffet Scentio</a>
+                                            <a href="" class="iconfont action-delete-filter"></a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item" data-fid="brand_id-20855">
+                                            <a href="" class="boxnone action-check-filter"></a>
+                                            <a href="" class="handle action-select-filter">伊丽莎白 · 雅顿</a>
+                                            <a href="" class="iconfont action-delete-filter"></a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item" data-fid="brand_id-20855">
+                                            <a href="" class="boxnone action-check-filter"></a>
+                                            <a href="" class="handle action-select-filter">瑞士葆丽美</a>
+                                            <a href="" class="iconfont action-delete-filter"></a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item" data-fid="brand_id-20855">
+                                            <a href="" class="boxnone action-check-filter"></a>
+                                            <a href="" class="handle action-select-filter">希思黎</a>
+                                            <a href="" class="iconfont action-delete-filter"></a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item" data-fid="brand_id-20855">
+                                            <a href="" class="boxnone action-check-filter"></a>
+                                            <a href="" class="handle action-select-filter">悦诗风吟</a>
+                                            <a href="" class="iconfont action-delete-filter"></a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item" data-fid="brand_id-20855">
+                                            <a href="" class="boxnone action-check-filter"></a>
+                                            <a href="" class="handle action-select-filter">雪肌精</a>
+                                            <a href="" class="iconfont action-delete-filter"></a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item" data-fid="brand_id-20855">
+                                            <a href="" class="boxnone action-check-filter"></a>
+                                            <a href="" class="handle action-select-filter">植村秀</a>
+                                            <a href="" class="iconfont action-delete-filter"></a>
+                                        </span>
+                                    </span>
+                                    <div class="multi-btn-cont tc">
+                                        <span class="submit-btn J_submitBtn">确定</span>
+                                        <span class="cancel-btn J_cancelBtn">取消</span>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <dl class="filter-entries clearfix" data-label="efficacy_id">
+                                <dt class="filter-entries-label">功效</dt>
+                                <dd class="filter-entries-multi">
+                                    <a href="">
+                                        <span class="text">多选+</span>
+                                    </a>
+                                </dd>
+                                <dd class="filter-entries-more action-unfold-entries">
+                                    <a href="">
+                                        <span class="text" data-toggle="收起">更多</span>
+                                        <i class="iconfont" data-toggle=""></i>
+                                    </a>
+                                </dd>
+                                <dd class="filter-entries-values">
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item" data-fid="efficacy_id-22">
+                                            <a href="" class="boxnone action-check-filter"></a>
+                                            <a href="" class="handle action-select-filter">深层清洁</a>
+                                            <a href="" class="iconfont action-delete-filter"></a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item" data-fid="efficacy_id-22">
+                                            <a href="" class="boxnone action-check-filter"></a>
+                                            <a href="" class="handle action-select-filter">抗皱/去皱</a>
+                                            <a href="" class="iconfont action-delete-filter"></a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item" data-fid="efficacy_id-22">
+                                            <a href="" class="boxnone action-check-filter"></a>
+                                            <a href="" class="handle action-select-filter">提拉紧致</a>
+                                            <a href="" class="iconfont action-delete-filter"></a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item" data-fid="efficacy_id-22">
+                                            <a href="" class="boxnone action-check-filter"></a>
+                                            <a href="" class="handle action-select-filter">去疤/去印</a>
+                                            <a href="" class="iconfont action-delete-filter"></a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item" data-fid="efficacy_id-22">
+                                            <a href="" class="boxnone action-check-filter"></a>
+                                            <a href="" class="handle action-select-filter">收缩毛孔</a>
+                                            <a href="" class="iconfont action-delete-filter"></a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item" data-fid="efficacy_id-22">
+                                            <a href="" class="boxnone action-check-filter"></a>
+                                            <a href="" class="handle action-select-filter">舒缓/抗敏感</a>
+                                            <a href="" class="iconfont action-delete-filter"></a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item" data-fid="efficacy_id-22">
+                                            <a href="" class="boxnone action-check-filter"></a>
+                                            <a href="" class="handle action-select-filter">去黑头</a>
+                                            <a href="" class="iconfont action-delete-filter"></a>
+                                        </span>
+                                    </span>
+                                    <span class="filter-entries-thin">
+                                        <span class="filter-item" data-fid="efficacy_id-22">
+                                            <a href="" class="boxnone action-check-filter"></a>
+                                            <a href="" class="handle action-select-filter">去角质</a>
+                                            <a href="" class="iconfont action-delete-filter"></a>
+                                        </span>
+                                    </span>
+                                    <div class="multi-btn-cont tc">
+                                        <span class="submit-btn J_submitBtn">确定</span>
+                                        <span class="cancel-btn J_cancelBtn">取消</span>
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div id="gallery_sortbar" class="gallery-sortbar clearfix">
+                    <div class="gallery-sort">
+                        <span class="gallery-sorttext">排序</span>
+                        <a href="" class="action-sort active" data-sort="1">
+                            <em>
+                                销售
+                            </em>
+                        </a>
+                        <a href="" class="action-sort" data-sort="2">
+                            <em>人气</em>
+                        </a>
+                        <a href="" class="action-sort" data-sort="3">
+                            <em>评分</em>
+                        </a>
+                        <a href="" class="action-sort" data-sort="5">
+                            <em>上架时间</em>
+                        </a>
+                        <a href="" class="action-sort listPrice" data-sort="7">
+                            <em>价格</em>
+                            <span></span>
+                        </a>
+                        <input type="hidden" name="orderBy" class="action-orderby" value="">
+                    </div>
+                    <div class="gallery-showmode">
+                        <input type="checkbox" name="only_promotion" id="" class="action-available">
+                        <label for="">只看特卖</label>
+                    </div>
+                    <div class="mini-pageview">
+                        <span class="page-action">
+                            <a href="" class="flip prev over">
+                                <i class="icon"></i>
+                            </a>
+                            <span class="page-count">
+                                <span class="page-current">1</span>
+                                /
+                                <span class="page-total">9</span>
+                            </span>
+                            <a href="" class="flip next">
+                                <i class="icon"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="gallery-total-info fl">
+                        (共
+                        <b class="op-search-result">188</b>
+                        件商品)
+                    </div>
+                </div>
+                <div id="gallery_show" class="gallery-show clb">
+                    <ul class="arrivalslist">
+                        <input type="hidden" class="action-pagedata" value="{total:188, pagecurrent:1, pagetotal:9}">
+                        <!-- <li>
+                            <div class="formall pro1197" product_id="1197" goods_id="1928">
+                                <div class="formalpic fr">
+                                    <dl class="formalpic_list">
+                                        <dd class="active" key="0">
+                                            <img switch-src="../images/lista.jpg" src="../images/list1.jpg"
+                                                alt="欧树蜂蜜洁肤凝胶【面部/身体】">
+                                        </dd>
+                                        <dd key="0">
+                                            <img switch-src="../images/lista.jpg" src="../images/list2.jpg"
+                                                alt="欧树蜂蜜洁肤凝胶【面部/身体】">
+                                        </dd>
+                                        <dd key="0">
+                                            <img switch-src="../images/lista.jpg" src="../images/list3.jpg"
+                                                alt="欧树蜂蜜洁肤凝胶【面部/身体】">
+                                        </dd>
+                                        <dd key="0">
+                                            <img switch-src="../images/lista.jpg" src="../images/list1.jpg"
+                                                alt="欧树蜂蜜洁肤凝胶【面部/身体】">
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="formallcont">
+                                    <div class="arrivals-pic">
+                                        <dl>
+                                            <dd>
+                                                <i class="icountry">
+                                                    <img src="../images/newWes.png" alt="">
+                                                    
+                                                </i>
+                                                欧美品牌
+                                            </dd>
+                                        </dl>
+                                        <a href="detail.html">
+                                            <img src="../images/lista.jpg" alt="欧树欧树蜂蜜洁肤凝胶【面部/身体】400毫升"
+                                                id="JS-goods-img-0" class="action-goods-img">
+                                        </a>
+                                    </div>
+                                    <div class="sale-price">
+                                        <span class="count fr">4.3折</span>
+                                        <span class="price tl">￥109.0</span>
+                                        <span class="dis tl">
+                                            <del>￥252.0</del>
+                                        </span>
+                                    </div>
+                                    <div class="arrivals-info">
+                                        <div class="infoconts">
+                                            <div class="des02">
+                                                <b class="yew">国内保税仓 零扣关 包税</b>
+                                                <a href="">欧树</a>
+                                            </div>
+                                            <p class="des03">
+                                                <a href="">蜂蜜梦幻柔护系列 欧树蜂蜜洁肤凝胶【面部/身体】</a>
+                                            </p>
+                                            <p class="des04">400毫升 </p>
+                                        </div>
+                                        <div class="tags">
+                                            <a href="" style="background:#c69a62;color:#ffffff;">直降</a>
+                                        </div>
+                                    </div>
+                                    <div class="btn-buy">
+                                        <a href="" class="btn btn-major action-addtocart"
+                                            rel="nofollow">
+                                            <span>
+                                                <span>加入购物车</span>
+                                            </span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="last">
+                            <b class="ipak itips"></b>
+                            <a href="" class="flip next">
+                                <i class="inext itips"></i>
+                                <p class="nextpage">下一页</p>
+                                <p class="pageinfo">显示下一页结果</p>
+                            </a>
+                        </li> -->
+                    </ul>
+                    <div class="pageview">
+                        <span class="flip prev over">
+                            <i class="iconfont prev"></i>
+
+                        </span>
+                        <a href="" class="flip active">1</a>
+                        <a href="" class="flip">2</a>
+                        <a href="" class="flip">3</a>
+                        <a href="" class="flip">4</a>
+                        <a href="" class="flip">5</a>
+                        <a href="" class="flip next">
+                            <i class="iconfont next"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-rs">
+        <div class="helper">
+            <div class="page-rs clearfix">
+                <div class="footer_left clearfix">
+                    <div class="clearfix">
+                        <div class="btom-info"></div>
+                        <div class="helper-item-wrapper-rs">
+                            <div class="helper-item-rs">
+                                <dl class="footer_info_2">
+                                    <dt class="footer_info_2_title" style="color: #111111;">
+                                        <a href="" class="link">常见问题</a>
+                                    </dt>
+                                    <li class="article-index-list">
+                                        <ul>
+                                            <dd class="article-index lv-1 content-item">
+                                                <a href="" title="常见问题" rel="nofollow">常见问题</a>
+                                            </dd>
+                                            <dd class="article-index lv-1 content-item">
+                                                <a href="" title="联络我们" rel="nofollow">联络我们</a>
+                                            </dd>
+                                        </ul>
+                                    </li>
+                                </dl>
+                            </div>
+                            <div class="helper-item-rs">
+                                <dl class="footer_info_2">
+                                    <dt class="footer_info_2_title" style="color: #111111;">
+                                        <a href="" class="link">付款方式</a>
+                                    </dt>
+                                    <li class="article-index-list">
+                                        <ul>
+                                            <dd class="article-index lv-1 content-item">
+                                                <a href="" title="在线支付" rel="nofollow">在线支付</a>
+                                            </dd>
+                                            <dd class="article-index lv-1 content-item">
+                                                <a href="" title="积分支付" rel="nofollow">积分支付</a>
+                                            </dd>
+                                        </ul>
+                                    </li>
+                                </dl>
+                            </div>
+                            <div class="helper-item-rs">
+                                <dl class="footer_info_2">
+                                    <dt class="footer_info_2_title" style="color: #111111;">
+                                        <a href="" class="link">配送方式</a>
+                                    </dt>
+                                    <li class="article-index-list">
+                                        <ul>
+                                            <dd class="article-index lv-1 content-item">
+                                                <a href="" title="配送说明" rel="nofollow">配送说明</a>
+                                            </dd>
+                                            <dd class="article-index lv-1 content-item">
+                                                <a href="" title="追踪订单" rel="nofollow">追踪订单</a>
+                                            </dd>
+                                        </ul>
+                                    </li>
+                                </dl>
+                            </div>
+                            <div class="helper-item-rs">
+                                <dl class="footer_info_2">
+                                    <dt class="footer_info_2_title" style="color: #111111;">
+                                        <a href="" class="link">售后服务</a>
+                                    </dt>
+                                    <li class="article-index-list">
+                                        <ul>
+                                            <dd class="article-index lv-1 content-item">
+                                                <a href="" title="正品保证" rel="nofollow">正品保证</a>
+                                            </dd>
+                                            <dd class="article-index lv-1 content-item">
+                                                <a href="" title="价格承诺" rel="nofollow">价格承诺</a>
+                                            </dd>
+                                            <dd class="article-index lv-1 content-item">
+                                                <a href="" title="30日退还保证" rel="nofollow">30日退还保证</a>
+                                            </dd>
+                                            <dd class="article-index lv-1 content-item">
+                                                <a href="" title="退款程序" rel="nofollow">退款程序</a>
+                                            </dd>
+                                            <dd class="article-index lv-1 content-item">
+                                                <a href="" title="更改订单" rel="nofollow">更改订单</a>
+                                            </dd>
+                                        </ul>
+                                    </li>
+                                </dl>
+                            </div>
+                            <div class="helper-item-rs">
+                                <dl class="footer_info_2">
+                                    <dt class="footer_info_2_title" style="color: #111111;">
+                                        <a href="" class="link">莎莎会员</a>
+                                    </dt>
+                                    <li class="article-index-list">
+                                        <ul>
+                                            <dd class="article-index lv-1 content-item">
+                                                <a href="" title="积分奖赏" rel="nofollow">积分奖赏</a>
+                                            </dd>
+                                            <dd class="article-index lv-1 content-item">
+                                                <a href="" title="VIP会员计划" rel="nofollow">VIP会员计划</a>
+                                            </dd>
+                                        </ul>
+                                    </li>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <a href="">
+                            <img src="../images/footer-info.jpg" alt="" width="840" height="61">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-right clearfix">
+                    <div class="btom-code">
+                        <div class="footer_qrcode_wrapper">
+                            <div class="footer_qrcode_img">
+                                <img src="../images/member_attention_2_qr.png" alt="莎莎网官方微信" height="128" width="128">
+                            </div>
+                            <div class="footer_qrcode_name">
+                                莎莎网官方微信
+                            </div>
+                            <div class="footer_qrcode_desc">
+                                ID:hksasadotcom
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btom-code btom-code2">
+                        <div class="footer_qrcode_wrapper">
+                            <div class="footer_qrcode_img">
+                                <img src="../images/member_attention_1_qr.png" alt="莎莎网官方微博" height="128" width="128">
+                            </div>
+                            <div class="footer_qrcode_name">
+                                莎莎网官方微博
+                            </div>
+                            <div class="footer_qrcode_desc">
+                                @莎莎网
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_link_2" id="footer_link_2_562">
+        <div class="footer_link_2_inner">
+            <div class="footer_link_2_linkboard">
+                <a href="" rel="nofollow">关于莎莎</a>
+                <a href="" class="footer_link_2_sep">|</a>
+                <a href="" rel="nofollow">使用条款</a>
+                <a href="" class="footer_link_2_sep">|</a>
+                <a href="" rel="nofollow">隐私策略</a>
+                <a href="" class="footer_link_2_sep">|</a>
+                <a href="" rel="nofollow">招商合作</a>
+                <a href="" class="footer_link_2_sep">|</a>
+                <a href="" rel="nofollow">帮助中心</a>
+                <a href="" class="footer_link_2_sep">|</a>
+                <a href="" rel="nofollow">港澳店铺推广</a>
+                <a href="" class="footer_link_2_sep">|</a>
+                <a href="" rel="nofollow">联络我们</a>
+                <a href="" class="footer_link_2_sep">|</a>
+                <a href="" rel="nofollow">其他送货地区</a>
+                <a href="" class="footer_link_2_sep">|</a>
+            </div>
+            <div class="footer_link_2_copyright">
+                Copyright 2000-2019 Sa Sa dot Com Limited 版权所有莎莎国际控股有限公司成员
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

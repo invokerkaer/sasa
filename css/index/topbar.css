@@ -1,0 +1,140 @@
+.topbar {
+    height: 32px;
+    line-height: 32px;
+    background-color: #f2f2f2;
+    font-size: 12px;
+    color: #6c6c6c;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.page-rs {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.topbar a {
+    color: #6c6c6c;
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0px;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+}
+
+.topbar .iconfont {
+    color: #ec3e7d;
+    -webkit-text-stroke-width: .4px;
+}
+
+.login-bar {
+    float: left;
+}
+
+.login-bar a {
+    color: #ec3e7d;
+    text-decoration: underline;
+}
+
+.member-link {
+    float: right;
+    text-align: right;
+}
+
+.member-link li {
+    display: block;
+    float: left;
+    border-right: 1px solid #e5e5e5;
+    height: 32px;
+    position: relative;
+    z-index: 305;
+}
+
+.member-link .noline {
+    border: none;
+}
+
+.member-link li .member-linktext a {
+    display: block;
+    font-weight: normal;
+    padding: 0 12px;
+}
+
+.member-linktext .minicart-cont-rs {
+    width: 300px;
+    overflow: hidden;
+    visibility: hidden;
+    background-color: white;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+    z-index: 1000;
+}
+.member-linktext a img {
+    width: 12px;
+    margin-left: 3px;
+}
+
+.member_attention_2 {
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+}
+
+.member_attention_2 .member_attention_2_qr {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    left: 0;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+}
+.member_attention_2>a {
+    display: inline-block !important;
+}
+
+.member_attention_2_item {
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.member_attention_2_item img {
+    display: block;
+    margin-bottom: -3px;
+}
+
+.member-link li dl {
+    background: #fff;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    padding: 5px 10px 10px 10px;
+    width: 86px;
+    z-index: 10;
+    display: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .2);
+}
+.member-link li dl a {
+    color: #888;
+}
+
+.member-link li dl dd a {
+    text-align: left;
+    line-height: 25px;
+    padding-left: 10px;
+    display: block;
+}
+.member-link li:hover {
+    background: #fff;
+}

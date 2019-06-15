@@ -1,0 +1,565 @@
+.topbar {
+    height: 32px;
+    line-height: 32px;
+    background-color: #f2f2f2;
+    font-size: 12px;
+    color: #6c6c6c;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.page-rs {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* .page-rs:after {
+    display: block;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    content: "\0020";
+    clear: both;
+} */
+
+.topbar a {
+    color: #6c6c6c;
+}
+
+.iconfont {
+    font-family: "iconfont";
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0px;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+}
+
+.topbar .iconfont {
+    color: #ec3e7d;
+    -webkit-text-stroke-width: .4px;
+}
+
+.login-bar {
+    float: left;
+}
+
+.login-bar a {
+    color: #ec3e7d;
+    text-decoration: underline;
+}
+
+.member-link {
+    float: right;
+    text-align: right;
+}
+
+.member-link li {
+    display: block;
+    float: left;
+    border-right: 1px solid #e5e5e5;
+    height: 32px;
+    position: relative;
+    z-index: 305;
+}
+
+.member-link .noline {
+    border: none;
+}
+
+.member-link li .member-linktext a {
+    display: block;
+    font-weight: normal;
+    padding: 0 12px;
+}
+
+.member-linktext .minicart-cont-rs {
+    width: 300px;
+    overflow: hidden;
+    visibility: hidden;
+    background-color: white;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+    z-index: 1000;
+}
+
+.minicart-cont-rs .empty {
+    padding: 10px 60px;
+    line-height: 25px;
+}
+
+.member-linktext a img {
+    width: 12px;
+    margin-left: 3px;
+}
+
+.member_attention_2 {
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+}
+
+.member_attention_2 .member_attention_2_qr {
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    display: none;
+    left: 0;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .2);
+}
+
+.member_attention_2>a {
+    display: inline-block !important;
+}
+
+.member_attention_2_item {
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.member_attention_2_item img {
+    display: block;
+    margin-bottom: -3px;
+}
+
+.member-link li dl {
+    background: #fff;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    padding: 5px 10px 10px 10px;
+    width: 86px;
+    z-index: 10;
+    display: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, .2);
+}
+
+.member-link li dl a {
+    color: #888;
+}
+
+.member-link li dl dd a {
+    text-align: left;
+    line-height: 25px;
+    padding-left: 10px;
+    display: block;
+}
+
+.member-link li:hover {
+    background: #fff;
+}
+
+.header-main {
+    background: #fff;
+    position: relative;
+    z-index: 300;
+}
+
+.header-main .page-rs {
+    position: relative;
+    height: 95px;
+    width: 1090px;
+    margin: 0 auto;
+}
+
+.sotelogo-rs {
+    height: 45px;
+    position: absolute;
+    top: 21px;
+    overflow: hidden;
+}
+
+.site_log_extend {
+    float: left;
+    margin-left: 10px;
+}
+
+/*注册*/
+.page {
+    width: 1090px;
+    margin: 0 auto;
+}
+
+.mod-bottom,
+.mod,
+.form-item,
+.signupin-content .form-item-normal,
+.signin,
+.signup,
+.sign-title,
+.signup-success .descrip,
+.related-search,
+.filter-container,
+.gallery-sortbar,
+.goods-item .goods-name,
+.brand-desc .brand-name,
+.share-recommend .pop-body .notice,
+.product-promotion,
+.product-params,
+.detail-content,
+.product-attributes,
+.product-saleslog,
+.product-score .btn-discuss,
+.post-comment .scores-list,
+.member-welcome,
+.member-notice,
+.member-welcome-tips,
+.member-mod,
+.member-address-submit,
+.member-tabs,
+.member-aftersales-record .aftersales-desc .desc .desc-title {
+    margin-bottom: 10px;
+}
+
+.clb {
+    zoom: 1;
+    clear: both;
+    width: 100%;
+}
+
+.signin-page-wrap {
+    margin-top: 40px;
+}
+
+.signup-article {
+    width: 420px;
+    margin-right: 68px;
+    box-shadow: 0 0 5px #e1e1e1, 0 0 15px #e1e1e1;
+}
+
+.signup {
+    padding: 35px;
+}
+
+.sign-title-text {
+    font-family: 'Microsoft Yahei';
+    color: #5a5d6c;
+    font-weight: normal;
+    font-size: 21px;
+}
+
+.sign-title-text span {
+    font-size: 12px;
+}
+
+.fr {
+    float: right;
+    _display: inline;
+}
+
+.sign-title-text span a {
+    color: #ec3e7d;
+}
+
+.signupin-content a {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.signupbox {
+    margin-top: 40px;
+}
+
+.signupin-content .form-item {
+    height: 51px;
+    font-size: 13px;
+}
+
+.signup .form-label {
+    width: 145px;
+    display: none;
+}
+
+.signupin-content .form-label {
+    height: 32px;
+    overflow: hidden;
+}
+
+.form-label {
+    text-align: right;
+    float: left;
+    width: 5.2em;
+    line-height: 2.1em;
+    min-height: 1em;
+    _height: 1em;
+}
+
+.signupin-content .warn {
+    color: #ef4521;
+}
+
+.signupin-content .form-act {
+    position: relative;
+}
+
+.form-act {
+    display: block;
+    width: 100%;
+    _display: inline;
+    line-height: 2.5em;
+}
+
+input[type=text],
+input[type=file],
+input[type=password],
+input[type=number],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=search],
+input[type=color],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
+textarea {
+    border-style: solid;
+}
+
+input:hover,
+input:focus,
+select:hover,
+select:focus,
+textarea:hover,
+textarea:focus {
+    border-color: #f9a0b4;
+    box-shadow: 0 0 5px #fbb4b0;
+}
+
+.signupin-content .x-input {
+    width: 340px;
+}
+
+.x-input {
+    height: 26px;
+    line-height: 26px;
+    padding: 4px;
+}
+
+input {
+    vertical-align: middle;
+    outline: none;
+    line-height: 21px;
+    height: 21px;
+}
+
+input,
+select,
+button,
+textarea {
+    font-size: 100%;
+    font-family: inherit;
+}
+
+
+input,
+select,
+textarea {
+    border-width: 1px;
+    border-color: #cccccc;
+    padding: 1px;
+}
+
+.password-check {
+    width: 22px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px;
+    visibility: hidden;
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+.password-check q {
+    display: none;
+}
+
+.password-check em {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.signupin-content .notice-inline {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    padding: 0;
+    height: 20px;
+    line-height: 20px;
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.notice-inline {
+    padding: 0 5px;
+    vertical-align: middle;
+}
+
+.error {
+    color: #666666;
+}
+
+.notice-inline .icon {
+    text-align: center;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    font-size: 14px;
+    margin-right: 5px;
+    vertical-align: middle;
+    background: #ed3f7e;
+    border-radius: 50%;
+}
+
+.error .icon {
+    color: white;
+}
+
+
+blockquote,
+q {
+    quotes: none;
+}
+
+.signupin-content .verify-input {
+    width: 120px;
+}
+
+.form-item .auto-change-verify-handle {
+    cursor: pointer;
+    width: 80px;
+    height: 36px;
+    display: inline-block;
+}
+
+.form-item a.auto-change-verify-handle {
+    width: 120px;
+    line-height: 36px;
+    color: #666;
+    text-align: center;
+}
+
+.form-item .verify-code {
+    vertical-align: middle;
+}
+
+a.btn-import,
+a.btn-major,
+a.btn-caution {
+    color: white;
+}
+
+.btn {
+    border: 0 none;
+    background-color: transparent;
+    padding: 0;
+    font-size: 100.0%;
+    _overflow-y: hidden;
+}
+
+a.btn {
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    *vertical-align: 1px;
+}
+
+.btn-import span,
+.btn-major span,
+.btn-caution span {
+    border-color: transparent;
+    _border-color: white;
+}
+
+.btn span {
+    background-color: #ee407f;
+    display: inline-block;
+    height: 100%;
+    line-height: 35px;
+    font-size: inherit;
+    *cursor: pointer;
+    padding-left: 30px;
+    color: #fff;
+}
+
+.btn span span {
+    border: 0 none;
+    background-color: transparent;
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+.signupin-content .form-item-license {
+    height: 20px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    height: 13px;
+    width: 20px;
+    box-shadow: none;
+}
+
+.caution-input {
+    background-color: #FFF8F6;
+    border-color: #E0C6CD;
+}
+
+.signupin-content .form-item-license .notice-inline {
+    top: 6px;
+    left: auto;
+    right: 0;
+}
+
+.form-act label {
+    margin-left: 5px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.signupin-content .form-item-license .form-sub-label a {
+    color: #ed3f7e;
+}
+
+.signupin-content .form-item-normal.logon-btn {
+    margin-top: 25px;
+}
+
+.signupin-content .form-item-normal {
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.signupin-content .btn-big,
+.passport-btn .btn-caution {
+    display: block;
+    width: 100%;
+    background: #ec3e7d;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.btn-major span {
+    background: #ec3e7d;
+}
+
+.btn-big span {
+    line-height: 2.5em;
+}
